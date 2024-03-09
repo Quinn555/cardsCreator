@@ -7,7 +7,7 @@ const path = require("path");
 app.use(express.static(path.resolve(__dirname, "../client/dist")));
 
 
-// Handle GET requests to /api route
+
 app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
